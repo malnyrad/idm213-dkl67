@@ -1,0 +1,206 @@
+/*fonts =======================================================================*/
+
+@font-face {
+    font-family: 'Aptos';
+    src: url(../fonts/aptos-regular.ttf) format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url(../fonts/aptos-italic.ttf) format(truetype);
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url(../fonts/aptos-bold.ttf) format(truetype);
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url(../fonts/aptos-bold-italic.ttf) format(truetype);
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Petit Nuage';
+    src: url(../fonts/petit-nuage-regular.woff2) format('woff2');
+    font-style: normal;
+}
+
+/*variables ===================================================================*/
+
+html {
+    --aptos: 'Aptos', Verdana, Arial, sans-serif;
+    --petit-nuage: 'Petit Nuage', Garamond, Times, serif;
+}
+
+/*text ========================================================================*/
+
+h1 {
+    font-family: var(--aptos);
+    font-size: 2.5vw;
+    text-transform: lowercase;
+}
+
+h2 {
+    font-family: var(--aptos);
+    font-size: 2vw;
+}
+
+h3 {
+    font-family: var(--petit-nuage);
+    font-size: 1.8vw;
+    text-transform: lowercase;
+}
+
+h4 {
+    font-family: var(--aptos);
+}
+
+p {
+    font-family: var(--aptos);
+}
+
+/*elements ====================================================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    max-height: 10vh;
+}
+
+body {
+    max-height: 90vh;
+}
+
+.content {
+    margin-left: 38.5vw;
+    margin-top: 15vw;
+    text-align: center;
+    width: 25vw;
+}
+
+.content > #content-header {
+    z-index: 2;
+}
+
+.content > #content-deco {
+    left: 1.5vw;
+    position: relative;
+    rotate: -5deg;
+    top: -5vw;
+    z-index: 1;
+}
+
+.content > #content-subheader, .content > #content-text {
+    position: relative;
+    top: -5vw;
+}
+
+img {
+    max-width: 7.5vw;
+}
+
+/*buttons ====================================================================*/
+
+#aries {
+    left: 47vw;
+    position: absolute;
+    top: 6.5vw;
+    z-index: 1;
+}
+
+#taurus {
+    left: 57vw;
+    position: absolute;
+    top: 10vw;
+    z-index: 1;
+}
+
+#gemini {
+    left: 64.5vw;
+    position: absolute;
+    top: 17.5vw;
+    z-index: 1;
+}
+
+#cancer {
+    left: 70vw;
+    position: absolute;
+    top: 27.5vw;
+    z-index: 1;
+}
+
+#leo {
+    left: 64.5vw;
+    position: absolute;
+    top: 37.5vw;
+    z-index: 1;
+}
+
+#virgo {
+    left: 57vw;
+    position: absolute;
+    top: 45vw;
+    z-index: 1;
+}
+
+#libra {
+    left: 47vw;
+    position: absolute;
+    top: 48.5vw;
+    z-index: 1;
+}
+
+#scorpio {
+    left: 37vw;
+    position: absolute;
+    top: 45vw;
+    z-index: 1;
+}
+
+#sagittarius {
+    left: 30vw;
+    position: absolute;
+    top: 37.5vw;
+    z-index: 1;
+}
+
+#capricorn {
+    left: 25vw;
+    position: absolute;
+    top: 27.5vw;
+    z-index: 1;
+}
+
+#aquarius {
+    left: 30vw;
+    position: absolute;
+    top: 17.5vw;
+    z-index: 1;
+}
+
+#pisces {
+    left: 37vw;
+    position: absolute;
+    top: 10vw;
+    z-index: 1;
+}
+
+#aries > h3, #taurus > h3, #gemini > h3, #cancer > h3, #leo > h3, #virgo > h3, #libra > h3, #scorpio > h3, #sagittarius > h3, #capricorn > h3, #aquarius > h3, #pisces > h3 {
+    left: 2vw;
+    position: absolute;
+    rotate: -5deg;
+    z-index: 2;
+}
