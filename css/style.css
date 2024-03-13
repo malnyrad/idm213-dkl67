@@ -39,33 +39,62 @@
 html {
     --aptos: 'Aptos', Verdana, Arial, sans-serif;
     --petit-nuage: 'Petit Nuage', Garamond, Times, serif;
+
+    --black: #251f1e;
+    --brown: #a9542f;
+    --pink: #e3bba1;
+    --white: #f9eeea;
 }
 
 /*text ========================================================================*/
 
 h1 {
+    color: var(--black);
     font-family: var(--aptos);
     font-size: 2.5vw;
+    position: absolute;
     text-transform: lowercase;
+    z-index: 2;
 }
 
 h2 {
+    color: var(--black);
     font-family: var(--aptos);
     font-size: 2vw;
+    text-transform: lowercase;
 }
 
 h3 {
+    color: var(--pink);
     font-family: var(--petit-nuage);
     font-size: 1.8vw;
     text-transform: lowercase;
 }
 
-h4 {
+h4, label {
+    color: var(--black);
     font-family: var(--aptos);
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-transform: lowercase;
 }
 
-p {
+h5 {
+    color: var(--pink);
+    font-family: var(--petit-nuage);
+    font-size: 2vw;
+    left: 1.5vw;
+    position: relative;
+    rotate: -5deg;
+    text-transform: lowercase;
+    top: -0.25vw;
+    z-index: 1;
+}
+
+p, input {
+    color: var(--black);
     font-family: var(--aptos);
+    font-size: 1.1vw;
 }
 
 /*elements ====================================================================*/
@@ -75,18 +104,21 @@ p {
 }
 
 header {
+    align-items: center;
     display: flex;
     justify-content: center;
     max-height: 10vh;
 }
 
 body {
+    background-color: var(--white);
     max-height: 90vh;
 }
 
 .content {
-    margin-left: 38.5vw;
-    margin-top: 15vw;
+    position:absolute;
+    left: 38.5vw;
+    top: 20vw;
     text-align: center;
     width: 25vw;
 }
@@ -108,99 +140,151 @@ body {
     top: -5vw;
 }
 
+form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -5vw;
+}
+
 img {
     max-width: 7.5vw;
 }
 
+img.question-icon {
+    filter: invert(7%) sepia(25%) saturate(469%) hue-rotate(321deg) brightness(98%) contrast(87%);
+    position: relative;
+    left: 37.5vw;
+    width: 2vw;
+}
+
+img.submit-icon {
+    filter: invert(7%) sepia(25%) saturate(469%) hue-rotate(321deg) brightness(98%) contrast(87%);
+    margin: 1vw;
+    width: 2vw;
+}
+
+img.question-icon:hover, img.submit-icon:hover {
+    filter: invert(35%) sepia(64%) saturate(492%) hue-rotate(333deg) brightness(98%) contrast(102%);
+}
+
 /*buttons ====================================================================*/
 
-#aries {
+#honeysuckle {
     left: 47vw;
     position: absolute;
     top: 6.5vw;
     z-index: 1;
 }
 
-#taurus {
+#poppy {
     left: 57vw;
     position: absolute;
     top: 10vw;
     z-index: 1;
 }
 
-#gemini {
+#lavender {
     left: 64.5vw;
     position: absolute;
     top: 17.5vw;
     z-index: 1;
 }
 
-#cancer {
+#white-rose {
     left: 70vw;
     position: absolute;
     top: 27.5vw;
     z-index: 1;
 }
 
-#leo {
+#sunflower {
     left: 64.5vw;
     position: absolute;
     top: 37.5vw;
     z-index: 1;
 }
 
-#virgo {
+#buttercup {
     left: 57vw;
     position: absolute;
     top: 45vw;
     z-index: 1;
 }
 
-#libra {
+#red-rose {
     left: 47vw;
     position: absolute;
     top: 48.5vw;
     z-index: 1;
 }
 
-#scorpio {
+#geranium {
     left: 37vw;
     position: absolute;
     top: 45vw;
     z-index: 1;
 }
 
-#sagittarius {
+#carnation {
     left: 30vw;
     position: absolute;
     top: 37.5vw;
     z-index: 1;
 }
 
-#capricorn {
+#pansy {
     left: 25vw;
     position: absolute;
     top: 27.5vw;
     z-index: 1;
 }
 
-#aquarius {
+#orchid {
     left: 30vw;
     position: absolute;
     top: 17.5vw;
     z-index: 1;
 }
 
-#pisces {
+#water-lily {
     left: 37vw;
     position: absolute;
     top: 10vw;
     z-index: 1;
 }
 
-#aries > h3, #taurus > h3, #gemini > h3, #cancer > h3, #leo > h3, #virgo > h3, #libra > h3, #scorpio > h3, #sagittarius > h3, #capricorn > h3, #aquarius > h3, #pisces > h3 {
+#honeysuckle:hover > img, #poppy:hover > img, #lavender:hover > img, #white-rose:hover > img, #sunflower:hover > img, #buttercup:hover > img, #red-rose:hover > img, #geranium:hover > img, #carnation:hover > img, #pansy:hover > img, #orchid:hover > img, #water-lily:hover > img {
+    filter: invert(35%) sepia(64%) saturate(492%) hue-rotate(333deg) brightness(50%) contrast(102%);
+}
+
+#honeysuckle > h3, #poppy > h3, #lavender > h3, #white-rose > h3, #sunflower > h3, #buttercup > h3, #red-rose > h3, #geranium > h3, #carnation > h3, #pansy > h3, #orchid > h3, #water-lily > h3 {
     left: 2vw;
     position: absolute;
     rotate: -5deg;
+    visibility: hidden;
+    z-index: 2;
+}
+
+#honeysuckle:hover > h3, #poppy:hover > h3, #lavender:hover > h3, #sunflower:hover > h3, #buttercup:hover > h3, #red-rose:hover > h3, #geranium:hover > h3, #carnation:hover > h3, #pansy:hover > h3, #orchid:hover > h3 {
+    color: var(--pink);
+    font-size: 1.9vw;
+    left: 2vw;
+    position: absolute;
+    rotate: -5deg;
+    text-shadow: 0.75px 0.75px var(--brown);
+    visibility: visible;
+    z-index: 2;
+}
+
+#white-rose:hover > h3, #water-lily:hover > h3 {
+    font-size: 1.9vw;
+    left: 2vw;
+    position: absolute;
+    rotate: -5deg;
+    text-shadow: 0.75px 0.75px var(--brown);
+    top: -0.5vw;
+    visibility: visible;
     z-index: 2;
 }
