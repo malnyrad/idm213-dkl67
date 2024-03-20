@@ -115,27 +115,52 @@ body {
     max-height: 90vh;
 }
 
+.help-overlay {
+    visibility: hidden;
+}
+
+.help-text {
+    position: absolute;
+    left: 38.5vw;
+    top: 22.5vw;
+    text-align: center;
+    width: 25vw;
+}
+
 .content {
-    position:absolute;
+    position: absolute;
     left: 38.5vw;
     top: 20vw;
     text-align: center;
     width: 25vw;
 }
 
-.content > #content-header {
+.help-text > #help-header, .content > #content-header {
     z-index: 2;
 }
 
-.content > #content-deco {
+.help-text > #help-deco-1, .content > #content-deco {
     left: 1.5vw;
     position: relative;
     rotate: -5deg;
     top: -5vw;
-    z-index: 1;
+    z-index: -1;
 }
 
-.content > #content-subheader, .content > #content-text {
+.help-text > #help-deco-2 {
+    left: 1vw;
+    position: relative;
+    rotate: -5deg;
+    top: -9vw;
+    z-index: -1;
+}
+
+.help-text > #help-text-2 {
+    position: relative;
+    top: -9vw;
+}
+
+.help-text > #help-text-1, .help-text > #help-subheader, .content > #content-subheader, .content > #content-text {
     position: relative;
     top: -5vw;
 }

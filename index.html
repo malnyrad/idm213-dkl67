@@ -11,12 +11,20 @@
     <header>
         <h1>Stellar Floriography</h1>
         <h5>Stellar<br>Floriography</h5>
-        <div class="help">
-            <img src="images/flower-question.svg" class="question-icon" alt="">
-            
-        </div>
+        <img src="images/flower-question.svg" class="question-icon" onclick="help_on()" alt="">
     </header>
-    <div class="buttons">
+    <div class="help-overlay" onclick="help_off()">
+        <div class="help-text">
+            <h2 id="help-header">Instructions</h2>
+            <h3 id="help-deco-1">How-to-use</h3>
+            <p id="help-text-1">Enter your birthdate and click the flower icon to find your flower based on your zodiac sign</p>
+            <h4 id="help-subheader">or</h4>
+            <h3 id="help-deco-2">or</h3>
+            <p id="help-text-2">Select one of the twelve flowers buttons to learn more about each flower</p>
+        </div>
+    </div>
+    <audio></audio>
+    <div class="flowers">
         <div id="honeysuckle" class="button">
             <h3>Honeysuckle</h3>
             <img src="images/honeysuckle-circle.svg" alt="">
