@@ -197,6 +197,12 @@ img.question-icon:hover, img.submit-icon:hover {
     filter: invert(35%) sepia(64%) saturate(492%) hue-rotate(333deg) brightness(98%) contrast(102%);
 }
 
+#content-image {
+    position: relative;
+    top: -4vw;
+    transform: scale(1.5);
+}
+
 /*buttons ====================================================================*/
 
 #honeysuckle {
