@@ -13,7 +13,7 @@
         <h5>Stellar<br>Floriography</h5>
         <img src="images/flower-question.svg" class="question-icon" onclick="help_on()" alt="">
     </header>
-    <div class="help-overlay" onclick="help_off()">
+    <div id="help-overlay" onclick="help_off()">
         <div class="help-text">
             <h2 id="help-header">Instructions</h2>
             <h3 id="help-deco-1">How-to-use</h3>
@@ -21,70 +21,73 @@
             <h4 id="help-subheader">or</h4>
             <h3 id="help-deco-2">or</h3>
             <p id="help-text-2">Select one of the twelve flowers buttons to learn more about each flower</p>
+            <p id="help-close"><i>click here to close</i></p>
         </div>
     </div>
     <audio id="music-box"></audio>
     <div class="flowers">
-        <div id="honeysuckle" class="button">
+        <div id="honeysuckle" class="flower">
             <h3>Honeysuckle</h3>
             <img src="images/honeysuckle-circle.svg" alt="">
         </div>
-        <div id="poppy" class="button">
+        <div id="poppy" class="flower">
             <h3>Poppy</h3>
             <img src="images/poppy-circle.svg" alt="">
         </div>
-        <div id="lavender" class="button">
+        <div id="lavender" class="flower">
             <h3>Lavender</h3>
             <img src="images/lavender-circle.svg" alt="">
         </div>
-        <div id="white-rose" class="button">
+        <div id="white-rose" class="flower">
             <h3>White Rose</h3>
             <img src="images/white-rose-circle.svg" alt="">
         </div>
-        <div id="sunflower" class="button">
+        <div id="sunflower" class="flower">
             <h3>Sunflower</h3>
             <img src="images/sunflower-circle.svg" alt="">
         </div>
-        <div id="buttercup" class="button">
+        <div id="buttercup" class="flower">
             <h3>Buttercup</h3>
             <img src="images/buttercup-circle.svg" alt="">
         </div>
-        <div id="red-rose" class="button">
+        <div id="red-rose" class="flower">
             <h3>Rose</h3>
             <img src="images/rose-circle.svg" alt="">
         </div>
-        <div id="geranium" class="button">
+        <div id="geranium" class="flower">
             <h3>Geranium</h3>
             <img src="images/geranium-circle.svg" alt="">
         </div>
-        <div id="carnation" class="button">
+        <div id="carnation" class="flower">
             <h3>Carnation</h3>
             <img src="images/carnation-circle.svg" alt="">
         </div>
-        <div id="pansy" class="button">
+        <div id="pansy" class="flower">
             <h3>Pansy</h3>
             <img src="images/pansy-circle.svg" alt="">
         </div>
-        <div id="orchid" class="button">
+        <div id="orchid" class="flower">
             <h3>Orchid</h3>
             <img src="images/orchid-circle.svg" alt="">
         </div>
-        <div id="water-lily" class="button">
+        <div id="water-lily" class="flower">
             <h3>Water Lily</h3>
             <img src="images/water-lily-circle.svg" alt="">
         </div>
     </div>
-    <div class="content">
-        <h2 id="content-header">Test</h2>
-        <h3 id="content-deco">test</h3>
-        <h4 id="content-subheader">some - dates</h4>
-        <p id="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div id="content">
+        <h2 id="content-header">Welcome</h2>
+        <h3 id="content-deco">Greetings</h3>
+        <h4 id="content-subheader">plants x zodiac</h4>
+        <p id="content-text">Welcome to Stellar Floriography! Here, you can discover the types of flowers associated with each of the twelve astrological zodiac signs. If you're not sure where to start, click the question mark icon at the top right corner of your screen.</p>
         <form>
             <div class="birthdate">
                 <label for="birthdate">Your birthdate:</label>
                 <input type="date" name="birthdate" required="">
             </div>
-            <img src="images/flower-icon.svg" class="submit-icon" alt="">
+            <button type="submit">
+                <img src="images/flower-icon.svg" class="submit-icon" alt="">
+            </button>
         </form>
     </div>
 <script src="js/main.js"></script>
